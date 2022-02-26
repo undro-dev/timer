@@ -1,0 +1,102 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 1240px;
+	margin: 0 auto;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.wrapper-timer {
+	width: 600px;
+	max-height: 450px;
+	background-color: #dcdcdc;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 30px;
+}
+.wrapper-add-time,
+.wrapper-time-setting {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 20px;
+}
+
+.btn-add-time,
+.btn-time-setting {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	width: 75px;
+	height: 50px;
+	border: 1px solid #808080;
+	border-radius: 30px;
+	background-color: #dcdcdc;
+	transition: box-shadow 0.3s;
+}
+.btn-add-time:hover {
+	box-shadow: 10px 10px 10px 2px rgba(34, 60, 80, 0.2);
+}
+.btn-time-setting:hover {
+	box-shadow: 10px 10px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.clock {
+	width: 100%;
+	height: 150px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 62px;
+}
+
+.wrapper-btn-control {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 30px;
+}
+
+.btn-control {
+	height: 50px;
+	width: 50px;
+	cursor: pointer;
+}
+
+.play,
+.stop,
+.reset {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	border-radius: 10px;
+	transition: box-shadow 0.3s;
+}
+.play {
+	background-color: #20b2aa;
+}
+.play:hover {
+	box-shadow: 10px 10px 10px 2px rgba(34, 60, 80, 0.2);
+}
+.stop {
+	background-color: #f08080;
+}
+.stop:hover {
+	box-shadow: 10px 10px 10px 2px rgba(34, 60, 80, 0.2);
+}
+.reset {
+	background-color: #4682b4;
+}
+.reset:hover {
+	box-shadow: 10px 10px 10px 2px rgba(34, 60, 80, 0.2);
+}
