@@ -67,10 +67,12 @@ class Timer {
       this.addNullBeforeTime();
 
       if (this.remainingMilliSeconds === 0) this.reset(); //Stopping of timer when value is zero
+      startBtn.disabled = true;
     }, 10);
   }
 
   reset() {
+    startBtn.disabled = false;
     this.stop();
     this.hoursEl.textContent = "00";
     this.minutesEl.textContent = "00";
@@ -99,6 +101,7 @@ class Timer {
   }
 
   stop() {
+    startBtn.disabled = false;
     clearInterval(this.interval);
     this.interval = null;
   }

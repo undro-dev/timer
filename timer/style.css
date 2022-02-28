@@ -81,6 +81,8 @@
 	color: white;
 	border-radius: 10px;
 	transition: box-shadow 0.3s;
+	outline: none;
+	border: none;
 }
 .play {
 	background-color: #20b2aa;
